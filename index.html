@@ -1,0 +1,108 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ParkSystem - Estacionamento</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>ParkSystem</h1>
+        <p>Sistema de estacionamento</p>
+    </header>
+
+    <main>
+
+        <section class="container">
+
+            <h2>Estacionamento</h2>
+
+            <p>Informe os valores para realizar o pagamento:</p>
+
+            <!-- Limite de estacionamento -->
+            <div class="limite">
+                <strong>Tempo máximo: 120 minutos</strong>
+            </div>
+
+            <!-- Tabela de tarifas -->
+            <div class="tabela-tarifas">
+
+                <h3>Tabela de Tarifas</h3>
+
+                <div class="tarifa">
+                    <span>R$ 1,00</span>
+                    <strong>30 minutos</strong>
+                </div>
+
+                <div class="tarifa">
+                    <span>R$ 1,75</span>
+                    <strong>60 minutos</strong>
+                </div>
+
+                <div class="tarifa">
+                    <span>R$ 3,00</span>
+                    <strong>120 minutos</strong>
+                </div>
+
+            </div>
+
+            <!-- Formulário de pagamento -->
+            <form id="formulario">
+
+                <label for="valor">Valor recebido (R$)</label>
+
+                <input
+                    type="number"
+                    id="valor"
+                    placeholder="Ex: 10.00"
+                    step="0.01"
+                    min="0"
+                    required
+                >
+
+                <!-- Área de resultado -->
+                <p>Troco (R$)</p>
+
+                <div id="troco">
+                    R$ 0,00
+                </div>
+
+                <p>Tempo adquirido</p>
+
+                <div id="tempo">
+                    Aguardando pagamento...
+                </div>
+
+                <!-- Botão -->
+                <button type="button" onclick="calcular()">
+                    Calcular pagamento
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>ParkSystem © 2026 - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

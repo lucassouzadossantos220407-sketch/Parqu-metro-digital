@@ -1,0 +1,213 @@
+
+
+/* RESET GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES DA PÁGINA */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eef2f7;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+header p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* ÁREA PRINCIPAL */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 80vh;
+}
+
+/* CARTÃO PRINCIPAL */
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 480px;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* TÍTULOS */
+.container h2 {
+    text-align: center;
+    color: #172554;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* LIMITE DE ESTACIONAMENTO */
+.limite {
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-left: 5px solid #2563eb;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.limite strong {
+    color: #1d4ed8;
+    font-size: 15px;
+}
+
+/* TABELA DE TARIFAS */
+.tabela-tarifas {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 28px;
+}
+
+.tabela-tarifas h3 {
+    text-align: center;
+    color: #172554;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.tarifa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 8px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tarifa:last-child {
+    border-bottom: none;
+}
+
+.tarifa span {
+    color: #16a34a;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tarifa strong {
+    color: #334155;
+    font-size: 14px;
+}
+
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #1e293b;
+    background-color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+/* BOTÃO */
+button {
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #15803d, #166534);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(22, 163, 74, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 500px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .container {
+        padding: 25px 20px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .tarifa {
+        padding: 12px 4px;
+    }
+}
